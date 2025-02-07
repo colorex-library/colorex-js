@@ -1,6 +1,6 @@
 {
   "name": "colorex-js",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "A package to colorize text with various styles.",
   "main": "src/colorize.js",
   "scripts": {

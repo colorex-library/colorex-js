@@ -21,7 +21,7 @@ npm install colorex-js
 Here's how you can use `colorex-js` to add color and styles to your terminal output:
 
 ```javascript
-const { Colorize } = require('colorex-js');
+const colorize = require('colorex-js');
 
 // Basic color usage
 console.log("Hello, World!".color("0,255,0"));  // Green text
