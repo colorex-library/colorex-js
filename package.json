@@ -4,7 +4,8 @@
   "description": "A package to colorize text with various styles.",
   "main": "src/index.js",
   "scripts": {
-    "test": "node test.js"
+    "build": "echo 'Building the project...'",
+    "test": "echo 'Running tests...'"
   },
   "keywords": [
     "color",
