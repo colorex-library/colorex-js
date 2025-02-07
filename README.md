@@ -1,6 +1,6 @@
-# colorex
+# colorex-js
 
-`colorex` is a simple and flexible Rust library that provides an easy way to style your terminal output with color and text formatting. With support for both RGB and HEX color codes, as well as text styles like bold, italic, underline, strikethrough, and more, it makes your terminal applications visually more appealing and readable.
+`colorex-js` is a simple and flexible JavaScript library that provides an easy way to style your terminal output with color and text formatting. With support for both RGB and HEX color codes, as well as text styles like bold, italic, underline, strikethrough, and more, it makes your terminal applications visually more appealing and readable.
 
 ## Features
 * RGB Color Support: Define colors using RGB values (e.g., color_rgb(255, 0, 0)).
@@ -11,38 +11,35 @@
 
 ## Installation
 
-To use colorex, add it to your `Cargo.toml` file:
+To install `colorex-js`, you can use npm:
 
-```toml
-[dependencies]
-colorex = "0.1.1"
+```bash
+npm install colorex-js
 ```
 
 ## Usage
-Here's how you can use `colorex` to add color and styles to your terminal output:
+Here's how you can use `colorex-js` to add color and styles to your terminal output:
 
-```rust
-use colorex::Colorize;
+```javascript
+const { Colorize } = require('colorex-js');
 
-fn main() {
-    // Basic color usage
-    println!("{}", "Hello, World!".color("0,255,0"));  // Green text
-    println!("{}", "Error!".color("#FF0000"));         // Red text
+// Basic color usage
+console.log("Hello, World!".color("0,255,0"));  // Green text
+console.log("Error!".color("#FF0000"));         // Red text
 
-    // Text styles
-    println!("{}", "Bold Text".bold());                // Bold text
-    println!("{}", "Italic Text".italic());            // Italic text
-    println!("{}", "Underlined Text".underline());     // Underlined text
-    println!("{}", "Strikethrough Text".strikethrough()); // Strikethrough text
-    println!("{}", "Dim Text".dim());                  // Dim text
-    println!("{}", "Inverted Text".invert());          // Inverted (background) text
+// Text styles
+console.log("Bold Text".bold());                // Bold text
+console.log("Italic Text".italic());            // Italic text
+console.log("Underlined Text".underline());     // Underlined text
+console.log("Strikethrough Text".strikethrough()); // Strikethrough text
+console.log("Dim Text".dim());                  // Dim text
+console.log("Inverted Text".invert());          // Inverted (background) text
 
-    // Background color
-    println!("{}", "Background Color".bg_color("0,0,255")); // Blue background
+// Background color
+console.log("Background Color".bgColor("0,0,255")); // Blue background
 
-    // Combining multiple styles
-    println!("{}", "ALL".color("0,255,0").bold().italic().underline().strikethrough().dim().invert().bg_color("0,0,255")); // All styles
-}
+// Combining multiple styles
+console.log("ALL".color("0,255,0").bold().italic().underline().strikethrough().dim().invert().bgColor("0,0,255")); // All styles
 ```
 
 ## Supported Styles
@@ -61,8 +58,8 @@ fn main() {
 The following example would result in a green-colored "Hello, World!" and a red "Error!" message in the terminal.
 
 ```rust
-println!("{}", "Hello, World!".color("0,255,0"));  // Green text
-println!("{}", "Error!".color("#FF0000"));         // Red text
+console.log("Hello, World!".color("0,255,0"));  // Green text
+console.log("Error!".color("#FF0000"));         // Red text
 ```
 
 ## Supported Color Formats
