@@ -2,7 +2,7 @@
   "name": "colorex-js",
   "version": "0.1.1",
   "description": "A package to colorize text with various styles.",
-  "main": "src/index.js",
+  "main": "index.js",
   "scripts": {
     "build": "echo 'Building the project...'",
     "test": "echo 'Running tests...'"
